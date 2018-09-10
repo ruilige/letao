@@ -199,6 +199,6 @@ window.onscroll=function () {
 $('#backroubu').on('touchstart',function () {
     $('html').animate({scrollTop:0} ,500)
 })
-// $('#service').on('touchstart',function () {
-//     location.href='https://xiaoyouxixianxian.github.io/baidushangq/'
-// })
+$('#service').on('touchstart',function () {
+    location.href='https://xiaoyouxixianxian.github.io/letao/'
+})
