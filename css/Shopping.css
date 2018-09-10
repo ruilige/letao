@@ -1,0 +1,286 @@
+html {
+    font-size: 100px !important;
+}
+/*设置背景颜色*/
+body {
+    background-color: #f7f7f7;
+}
+/*默认清除边距*/
+h1 {
+    margin: 0;
+}
+em {
+    font-style: normal;
+}
+section .ShoppingCat-Item a{
+    text-decoration: none;
+    color: #333333;
+}
+/*黄色头部*/
+.ShoppingCat-BOX header .ShoppingCat-headerBox {
+    background-color: #f9b733;
+    width: 100%;
+    height: .49rem;
+    line-height: .49rem;
+    text-align: center;
+    color: #fff;
+}
+/*头部h1 标签样式*/
+.ShoppingCat-BOX header .ShoppingCat-headerBox h1 {
+    font-size: .18rem;
+    display: inline-block;
+}
+/*头部span 标签样式*/
+.ShoppingCat-BOX header .ShoppingCat-headerBox span {
+    font-size: .14rem;
+    position: absolute;
+    right: .16rem;
+}
+/*购物商品列表*/
+.ShoppingCat-BOX .ShoppingCat-Item .ShoppingCat-Item-list {
+    width: 94%;
+    height: 1.65rem;
+    border-radius: .1rem;
+    background-color: #fff;
+    margin: .1rem;
+    position: relative;
+}
+.ShoppingCat-BOX .ShoppingCat-Item .ShoppingCat-Item-list img{
+    width: .23rem;
+    height: .23rem;
+}
+/*购物车勾选图片*/
+.ShoppingCat-BOX .ShoppingCat-Item .ShoppingCat-Item-list .Shopping-List-icon {
+    position: absolute;
+    left: .12rem;
+    top: .13rem;
+}
+/*勾选图标*/
+.ShoppingCat-BOX .ShoppingCat-Item .ShoppingCat-Item-list .Shopping-List-icon1 {
+    position: absolute;
+    top: .95rem;
+    left: .12rem;
+}
+.ShoppingCat-BOX .ShoppingCat-Item .ShoppingCat-Item-list .dianpuming {
+    width: 85%;
+    float: right;
+    margin-top: .13rem;
+}
+/*店铺图片*/
+.ShoppingCat-BOX .ShoppingCat-Item .ShoppingCat-Item-list .shop-list-des img {
+    width: 1rem;
+    height: 1rem;
+    margin: .2rem 0 0 .5rem;
+}
+/*span 标签*/   /*店铺商品简介*/
+.ShoppingCat-BOX .ShoppingCat-Item .ShoppingCat-Item-list .shop-list-des .des-list-spans {
+    position: absolute;
+    top: .65rem;
+    left: 1.45rem;
+    font-size: .14rem;
+}
+/*i标签 商品价格*/
+.ShoppingCat-BOX .ShoppingCat-Item .ShoppingCat-Item-list .shop-list-des .shop-des-i {
+    position: absolute;
+    top: 1.3rem;
+    left: 1.45rem;
+    color: #ee1a1a;
+    font-style: normal;
+}
+/*商品价格表盒子*/
+.ShoppingCat-BOX .ShoppingCat-Item .ShoppingCat-Item-list .shop-list-des .jiagebiao {
+    position: absolute;
+    top: 1.25rem;
+    left: 2.5rem;
+    width: .8rem;
+    height: .26rem;
+    border: 1px solid #b9b9b9;
+    border-radius: .06rem;
+    display: flex;
+    justify-content: space-between;
+}
+/*加减商品价格表*/
+.ShoppingCat-BOX .ShoppingCat-Item .ShoppingCat-Item-list .shop-list-des .jiagebiao button {
+    width: .25rem;
+    height: .23rem;
+    outline: none;
+    border: transparent;
+    background-color: #fff;
+}
+.ShoppingCat-BOX .ShoppingCat-Item .ShoppingCat-Item-list .shop-list-des .jiagebiao .btn1 {
+    color: #999;
+}
+.ShoppingCat-BOX .ShoppingCat-Item .ShoppingCat-Item-list .shop-list-des .jiagebiao .btn2 {
+    color: #000;
+}
+/*加减按钮*/
+.ShoppingCat-BOX .ShoppingCat-Item .ShoppingCat-Item-list .shop-list-des .jiagebiao button:nth-of-type(1) {
+    border-radius: .06rem 0 0 .06rem;
+}
+/*加减按钮*/
+.ShoppingCat-BOX .ShoppingCat-Item .ShoppingCat-Item-list .shop-list-des .jiagebiao button:nth-of-type(2) {
+    border-radius: 0 .06rem .06rem 0;
+}
+/*加减数字*/
+.ShoppingCat-BOX .ShoppingCat-Item .ShoppingCat-Item-list .shop-list-des .jiagebiao input {
+    line-height: .25rem;
+    width: .21rem;
+    height: .24rem;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+/*~ 你可能还喜欢 ~*/
+.ShoppingCat-BOX .ShoppingCat-Item .live-baby {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: .4rem;
+    color: #333333;
+    font-size: .16rem;
+    line-height: .4rem;
+}
+.ShoppingCat-BOX .ShoppingCat-Item .live-baby div {
+    width: .5rem;
+    height: .005rem;
+    border: .005rem solid #666;
+ }
+.ShoppingCat-BOX .ShoppingCat-Item .live-baby .div1 {
+    position: absolute;
+    top: .185rem;
+    left: .86rem;
+}
+.ShoppingCat-BOX .ShoppingCat-Item .live-baby .div2 {
+    position: absolute;
+    top: .185rem;
+    right: .86rem;
+}
+/* 可能喜欢商品 ul 标签*/
+.ShoppingCat-BOX .ShoppingCat-Item .list-ull0 {
+    list-style: none;
+    padding: 0 .1rem;
+    display: flex;
+    justify-content: space-around;
+}
+/* 可能喜欢商品 ul li 标签*/
+.ShoppingCat-BOX .ShoppingCat-Item .list-ull0 li {
+    width: 31.5%;
+    height: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: .12rem;
+    color: #333;
+}
+/*可能喜欢宝贝 images*/
+.ShoppingCat-BOX .ShoppingCat-Item .list-ull0 li img {
+    border-radius: .03rem;
+    width: 100%;
+    height: 100%;
+}
+/*可能喜欢宝贝 p 清除标签默认样式*/
+.ShoppingCat-BOX .ShoppingCat-Item .list-ull0 li p {
+    margin: .06rem 0 0 0;
+}
+.ShoppingCat-BOX .ShoppingCat-Item .list-ull0 li i {
+    width: 100%;
+    text-align: center;
+    font-style: normal;
+    color: #ee1a1a;
+    margin-top: .1rem;
+    font-size: .14rem;
+}
+
+
+/*底部tab  ---  引入的底部*/
+
+footer{
+    width: 100%;
+    height: .49rem;
+    line-height: .49rem;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+footer .ShoppingCat-Settlement-List .foot-ccccc {
+    position: fixed;
+    bottom: .485rem;
+    background-color: #fff;
+    border-bottom: 1px solid #EDEDED;
+    border-top: 1px solid #EDEDED;
+    width: 100%;
+    height: .57rem;
+    display: flex;
+    align-items: center;
+}
+footer .ShoppingCat-Settlement-List .foot-ccccc img {
+    width: .23rem;
+    height: .23rem;
+    position: absolute;
+    top: .15rem;
+    left: .15rem;
+}
+/*合计总价*/
+footer .ShoppingCat-Settlement-List .foot-ccccc .Total-selection {
+    position: absolute;
+    left: 1.45rem;
+    color: #333;
+    font-size: .18rem;
+}
+footer .ShoppingCat-Settlement-List .foot-ccccc .Total-selection i {
+    font-style: normal;
+    color: #ee1a1a;
+}
+/*全选按钮*/
+footer .ShoppingCat-Settlement-List .foot-ccccc .Total {
+    position: absolute;
+    left: .43rem;
+    color: #333;
+    font-size: .14rem;
+}
+/*结算按钮*/
+footer .ShoppingCat-Settlement-List .foot-ccccc  a .Settlement {
+    width: 1.02rem;
+    height: .55rem;
+    background-color: #FF1F1F;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    font-size: .18rem;
+    text-align: center;
+    line-height: .55rem;
+}
+
+footer .navTabs {
+    display: flex;
+}
+footer .navTabs a{
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+}
+footer .navTabs a p{
+    margin-top: -.18rem;
+    font-size: .12rem;
+    color: #333333;
+}
+footer .navTabs a img{
+    width: .25rem;
+    margin: auto;
+    margin-top: .07rem;
+    position: relative;
+    top: -.05rem;
+}
+footer .navTabs a .active {
+    display: none;
+}
+footer .navTabs a .normal {
+    display: block;
+}
+footer .navTabs a .txt{
+    display: block;
+}
+footer .navTabs a .textColor{
+    color:#F9B52C;
+}

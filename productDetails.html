@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--<link href="lib/bootstarp/css/bootstrap.min.css" rel="stylesheet">-->
+  <link href="css/produceDetail.css " rel="stylesheet">
+  <link href="lib/dist/css/swiper.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/fonts.css">
+  <script>
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?84ad9d3b8f524998c95fbca7cce62fd9";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      })();
+  </script>
+
+</head>
+<body style="font-family: Regular">
+<!--最外层的大盒子-->
+
+<div class="detail">
+  <!--<div class="fix" style="-->
+   <!--position:absolute;-->
+            <!--top:0;-->
+            <!--bottom:0;-->
+            <!--left:0;-->
+            <!--overflow:auto;">-->
+    <!--当滑动的时候头部出现的情况-->
+    <div class="slide-titlebox">
+      <div class="first-title">
+        <img src="images/product%20-details/fanhuijiantou.png">
+        <img id="backroubu" style="width: 0.25rem;height: 0.25rem;text-align: center " src="images/product%20-details/toubuxiaotu.png">
+        <div >
+          <img style="width: 0.25rem ;height: 0.25rem;" src="images/product%20-details/gouwu.png">
+          <img style="width: 0.24rem ;height: 0.08rem; margin-top: -0.1rem" src="images/product%20-details/gengduo.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-box">
+      <!--包裹着视频和图片的大盒子-->
+      <div class="header-box">
+        <!--头部的图片商品 图片-->
+        <div class="picture-box">
+          <div class="banner-box">
+            <!--头部的icon图片-->
+            <div class="title-icon">
+              <img src="images/product%20-details/dingbu%20icon%201.png">
+              <div class='ic-box'>
+                <img src="images/product%20-details/dingbu%20icon%202.png">
+                <img src="images/product%20-details/dingbu%20icon%203.png">
+              </div>
+            </div>
+            <!--swiper的轮播-->
+            <div class="banner1">
+              <div class="swiper-container ">
+
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/product%20-details/toubutupian2.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/product%20-details/toubutupian1.png" id="videoBtn">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/product%20-details/toubutupian3.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/product%20-details/toubutupian4.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/product%20-details/toubutupian5.png">
+                  </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination "></div>
+              </div><!--轮播结束-->
+            </div>
+
+            <!--视频的大按钮-->
+            <div class="pause-box">
+              <img class="pause" src="images/product%20-details/shipin%20icon%201.png">
+            </div>
+            <!--&lt;!&ndash;图片和视频的两个小按钮&ndash;&gt;-->
+            <div class="tab-shipin " >
+              <!--视频的按钮-->
+              <div class="bg-btn" id="bg-btn1">
+                <!--active的样式-->
+                <img src="images/product%20-details/shipin%20icon%202.png" class="activepopto">
+                <!--normal下的样式-->
+                <img src="images/product%20-details/normalvideo.png" class="normalpopto">
+              </div>
+              <!--图片的按钮-->
+              <div class="pic-bg">
+                <!--正常状态的按钮-->
+                <button class="normal-photo" id="btnpic1">图片</button>
+                <!--active的按钮-->
+                <div class="activepic">
+                  <img src="images/product%20-details/jianbianpic1@2x.png">
+                  <span>图片</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!--视频-->
+        <!--视频内容的大盒子-->
+        <div class="v-box">
+          <!--视频内容的头部的盒子-->
+          <div class="shipin-title  ">
+            <img src="images/product%20-details/shhipinback.png" id="videoblack">
+            <div class='ic-box'>
+              <img src="images/product%20-details/shipingouwu.png">
+              <img src="images/product%20-details/shipindian.png">
+            </div>
+          </div>
+          <!--视频-->
+          <video src="images/product%20-details/MP4.mp4"   id="movie1" loop ></video>
+          <!--视频和图片的两个按钮-->
+          <!--&lt;!&ndash;图片和视频的两个小按钮&ndash;&gt;-->
+          <div class="tab-shipin " id="video-moive" >
+            <!--视频的按钮-->
+            <div class="bg-btn">
+              <!--active的样式-->
+              <img src="images/product%20-details/shipin%20icon%202.png" class="activepopto">
+              <!--normal下的样式-->
+              <img src="images/product%20-details/normalvideo.png" class="normalpopto">
+            </div>
+            <!--图片的按钮-->
+            <div class="pic-bg">
+              <!--正常状态的按钮-->
+              <button class="normal-photo" id="btnpic2">图片</button>
+              <!--active的按钮-->
+              <div class="activepic">
+                <img src="images/product%20-details/jianbianpic1@2x.png">
+                <span>图片</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--文字部分的叙述部分-->
+      <div class="tradeproduction">
+        <!--价钱部分-->
+        <div class="trade-title">
+          <span class="price">￥<strong style="font-size: 0.24rem">3200</strong></span>
+          <img src="images/product%20-details/fenxiang%20icon.png" style="width: 0.27rem;height: 0.26rem">
+        </div>
+        <!--品牌-->
+        <div class="brand">
+          <img src="images/product%20-details/guoqi.png" >
+          <span>意大利品牌  海外直供</span>
+        </div>
+        <p>Armani/阿玛尼男士大老鹰标志腰带光头面皮带&nbsp; &nbsp;百搭均码可剪裁长度</p>
+        <!--运费-->
+        <div class="carriage">
+          <span>运费：20.00</span>
+          <span>月销38笔</span>
+          <span>香港</span>
+        </div>
+      </div>
+      <!--领券和选择部分的大盒子-->
+      <div class="getacoupon ">
+        <!--领券的样式-->
+        <div class="zhongjia">
+          <div class="leRig">
+            <div class="character">
+              <span class="left-t">领券</span>
+              <span class="right-t">满1000减50；满3000减200</span>
+            </div>
+            <div class="jian-box">
+
+              <img src="images/product%20-details/jiantou1.png">
+              <img src="images/product%20-details/jiantou2.png">
+            </div>
+
+          </div>
+          <div class="leRig">
+            <div class="character">
+              <span class="left-t">税费</span>
+              <span class="right-t">进口税&nbsp;&nbsp;商家承担</span>
+            </div>
+            <div class="jian-box">
+              <img src="images/product%20-details/jiantou1.png">
+              <img src="images/product%20-details/jiantou2.png">
+            </div>
+
+          </div>
+          <div class="logistics ">
+            <span >物流</span>
+            <img src="images/product%20-details/wuliu.png">
+            <p><span>香港发货</span><span>中国海关</span><span>郑州市</span></p>
+          </div>
+          <div class="leRig">
+            <div class="character">
+              <span class="left-t">服务</span>
+              <span class="right-t">破损包退.正品保障</span>
+            </div>
+            <div class="jian-box">
+              <img src="images/product%20-details/jiantou1.png">
+              <img src="images/product%20-details/jiantou2.png">
+            </div>
+
+          </div>
+        </div>
+        <!--选择的样式-->
+        <div class="option">
+          <div class="leRig">
+            <div class="character">
+              <span class="left-t">选择</span>
+              <span class="right-t">选择颜色分类</span>
+            </div>
+            <div class="jian-box">
+              <img src="images/product%20-details/jiantou1.png">
+              <img src="images/product%20-details/jiantou2.png">
+            </div>
+
+          </div>
+          <div class="leRig">
+            <div class="character">
+              <span class="left-t">参数</span>
+              <span class="right-t">上市时间 宽度 品牌 款式</span>
+            </div>
+            <div class="jian-box">
+              <img src="images/product%20-details/jiantou1.png">
+              <img src="images/product%20-details/jiantou2.png">
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--宝贝评价部分-->
+      <div class="goodsevaluation">
+        <!--头部-->
+        <div class="eve-title">
+          <span>宝贝评价</span>
+          <div class="check">
+            <span style="color: #feb218">查看全部</span>
+            <img style="margin-right: 0.1rem" src="images/product%20-details/jiantou2.png">
+          </div>
+        </div>
+        <!--用户评价-->
+        <div class="userevalu">
+          <div class="usepicture">
+            <img style="width: 0.25rem;height: 0.25rem" src="images/product%20-details/logo.png">
+            <span style="font-size: 0.12rem;margin-left: 0.07rem" >香喷喷**烤鸡</span>
+            <p>质量不错，就是价格有点傲娇，整体还是不错的</p>
+          </div>
+        </div>
+
+        <!--相关推荐的部分-->
+        <div class="recommend">
+          <!--头部-->
+          <div class="re-title">
+            <span>相关推荐</span>
+            <span>热销排行</span>
+          </div>
+          <!--内容轮播部分-->
+          <div class="re-content">
+            <div class="swiper-container ">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <ul>
+                    <li>
+                      <img src="images/product%20-details/lunbo1.png">
+                      <div class="easy-produce">
+                        <p>EMPOIO ARMANI/阿玛尼2018</p>
+                        <p><span>￥</span><strong>3100.0</strong></p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="images/product%20-details/lunbo2.png">
+                      <div class="easy-produce">
+                        <p>EMPOIO ARMANI/阿玛尼2018</p>
+                        <p><span>￥</span><strong>3100.0</strong></p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="images/product%20-details/lunbo3.png">
+                      <div class="easy-produce">
+                        <p>EMPOIO ARMANI/阿玛尼2018</p>
+                        <p><span>￥</span><strong>3100.0</strong></p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <ul>
+                    <li>
+                      <img src="images/product%20-details/lunbo4%202.png">
+                      <div class="easy-produce">
+                        <p>EMPOIO ARMANI/阿玛尼2018</p>
+                        <p><span>￥</span><strong>3100.0</strong></p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="images/product%20-details/lunbo5.png">
+                      <div class="easy-produce">
+                        <p>EMPOIO ARMANI/阿玛尼2018</p>
+                        <p><span>￥</span><strong>3100.0</strong></p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="images/product%20-details/lunbo6.png">
+                      <div class="easy-produce">
+                        <p>EMPOIO ARMANI/阿玛尼2018</p>
+                        <p><span>￥</span><strong>3100.0</strong></p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <ul>
+                    <li>
+                      <img src="images/product%20-details/lunbo6.png">
+                      <div class="easy-produce">
+                        <p>EMPOIO ARMANI/阿玛尼2018</p>
+                        <p><span>￥</span><strong>3100.0</strong></p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="images/product%20-details/lunbo7.png">
+                      <div class="easy-produce">
+                        <p>EMPOIO ARMANI/阿玛尼2018</p>
+                        <p><span>￥</span><strong>3100.0</strong></p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="images/product%20-details/lunbo8.png">
+                      <div class="easy-produce">
+                        <p>EMPOIO ARMANI/阿玛尼2018</p>
+                        <p><span>￥</span><strong>3100.0</strong></p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 如果需要分页器 -->
+              <div class="swiper-pagination" id="secondbannercircle"></div>
+            </div><!--第二个轮播结束标签-->
+          </div> <!--内容轮播结束标签-->
+        </div><!--相关推荐的结束标签-->
+      </div><!--宝贝评价结束标签-->
+      <!--商品详情部分-->
+      <div class="specific">
+        <div class="fa">
+          <div class="line-left"></div>
+          <span>商品详情</span>
+          <div class="line-right"></div>
+        </div>
+        <!--下面的内容部分-->
+        <div class="xiangqing">
+          <img src="images/product%20-details/datu%201.png">
+          <img src="images/product%20-details/datu%202.png">
+          <div class="clear-fix"></div>
+          <p>商品大图</p>
+          <img src="images/product%20-details/datu%203.png"><img src="images/product%20-details/datu%204.png">
+          <div class="clear-fix"></div>
+          <p class="p">细节展示</p>
+          <!--<div class="spacing"></div>-->
+          <img  src="images/product%20-details/datu%205.png">
+          <img src="images/product%20-details/datu%206.png">
+          <div><h1 style="font-size: 0.49rem"><br>_</h1></div>
+        </div>
+        <div class="clear-fix"></div>
+      </div> <!--下面的内容部分结束标签-->
+      <!--底部的部分-->
+      <div class="footer">
+        <div class="zongicon">
+          <div class="footer-icon " id="pu">
+            <img src="images/product%20-details/dibu%20icon%201.png">
+            <p style="color: #feb218">店铺</p>
+          </div>
+          <div class="footer-icon">
+            <img id="service" src="images/product%20-details/dibu%20icon%202.png">
+            <p>客服</p>
+          </div>
+          <div class="footer-icon">
+            <img style="width: 0.3rem;height: 0.3rem;margin-top: -0.05rem" src="images/product%20-details/dibu%20icon%203.png">
+            <p>关注</p>
+          </div>
+        </div>
+        <button class="shoppingcart ">加入购物车</button>
+        <button class="purchasenow ">立即购买</button>
+      </div>
+    </div>
+  <!--</div>-->
+
+  <!--遮罩层部分-->
+  <div class="mask"></div>
+  <!--弹窗部分-->
+  <div class="pop-up " id="pop-up">
+    <!--头部-->
+    <div class="pop-title">
+      <div class="pop-title-content">
+        <img src="images/product%20-details/lunbo1.png">
+        <div>
+          <p>￥<strong>3200</strong></p>
+          <p>库存23件</p>
+          <p>已选："BLACK-80001"</p>
+        </div>
+      </div>
+      <img class="close" id="close" src="images/product%20-details/guanbi%20ICON.png">
+    </div>
+    <!--颜色分类-->
+    <div class="classification">
+      <h3>颜色分类</h3>
+      <button class="color">BLACK-80001</button>
+    </div>
+    <!--购买数量-->
+    <div class="quantity  classification">
+      <h3>购买数量</h3>
+      <div><span class="sub">-</span>
+        <span class="num">1</span>
+        <span class="add">+</span></div>
+    </div>
+    <div><h1 style="font-size: 0.49rem"><br>_</h1></div>
+    <!--底部的购物车和立即购买-->
+    <div class="gu">
+      <button class="tangou" style="background-color:#f9b428">加入购物车</button>
+      <button class="tanmai" style="background-color:#ff1f1f">立即购买</button>
+    </div>
+  </div>
+</div><!--detail结束标签-->
+</body>
+<script src="lib/dist/js/swiper.min.js"></script>
+<script src="lib/zepto.js"></script>
+<script src="js/phone.js"></script>
+<script src="js/productDetails.js"></script>
+<script>
+
+</script>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/dist/css/swiper.css">
+    <link rel="stylesheet" href="./lib/bootstarp/css/bootstrap.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*与bootstrap：font-size冲突*/
+        html{
+            font-size: 100px!important;
+        }
+        body{
+            font-size: .13rem;
+            color: #333333;
+            font-family: Regular;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: #333333;
+        }
+        /*footer定位 露白 */
+        html,body{
+            height:100%;
+            overflow:auto;
+            margin: 0;
+        }
+         footer{
+            width: 100%;
+            height: .49rem;
+            line-height: .49rem;
+            background-color: #fff;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+         footer .navTabs {
+            display: flex;
+        }
+         footer .navTabs a{
+            width: 25%;
+            text-align: center;
+            text-decoration: none;
+        }
+         footer .navTabs a p{
+            margin-top: -.18rem;
+            font-size: .12rem;
+            color: #333333;
+        }
+         footer .navTabs a img{
+            width: .25rem;
+            margin: auto;
+            margin-top: .07rem;
+            position: relative;
+            top: -.05rem;
+        }
+         footer .navTabs a .active {
+            display: none;
+        }
+         footer .navTabs a .normal {
+            display: block;
+        }
+         footer .navTabs a .txt{
+            display: block;
+        }
+         footer .navTabs a .textColor{
+            color:#F9B52C;
+        }
+
+    </style>
+</head>
+<body>
+<!--底部-->
+<footer>
+    <div class="navTabs">
+        <a href="#">
+            <img src="images/home/footer11.png" alt="" class="normal" style="display: none">
+            <img src="images/home/footer1.png" alt="" class="active" style="display: block">
+            <p class="active txt" style=" color:#F9B52C;">首页</p>
+        </a>
+        <a href="#">
+            <img src="images/home/footer2.png" alt="" class="normal">
+            <img src="images/home/footer2.png" alt="" class="active">
+            <p>发现</p>
+        </a>
+        <a href="#">
+            <img src="images/home/footer3.png" alt="" class="normal">
+            <img src="images/home/footer33.png" alt="" class="active">
+            <p>购物车</p>
+        </a>
+        <a href="#">
+            <img src="images/home/footer4.png" alt="" class="normal">
+            <img src="images/home/footer44.png" alt="" class="active">
+            <p>我的</p>
+        </a>
+    </div>
+</footer>
+</body>
+<script src="lib/zepto.js"></script>
+<script src="js/phone.js"></script>
+<script>
+    // footer tab切换
+    // 移动端使用 touchstart 事件代替 click 事件
+    $('footer .navTabs a').on('touchstart',function () {
+        $(this).find('img').eq(0).css('display','none');
+        $(this).find('img').eq(1).css('display','block');
+        $(this).find('p').eq(0).css('color','#F9B52C');
+
+        $(this).siblings('a').find('img').css('display','none');
+        $(this).siblings('a').eq(0).find('img').eq(0).css('display','block');
+        $(this).siblings('a').eq(1).find('img').eq(0).css('display','block');
+        $(this).siblings('a').eq(2).find('img').eq(0).css('display','block');
+        $(this).siblings('a').find('p').css('color','#333333');
+    });
+</script>
+</html>

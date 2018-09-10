@@ -1,0 +1,163 @@
+html{
+  font-size: 100px !important;
+}
+/*@font-face  {*/
+    /*font-family: "苹方 常规";*/
+    /*src: url("../fonts/");*/
+/*}*/
+body{
+    overflow-x: hidden;
+    font-family: '苹方 常规';
+   font-size: 0.14rem;
+}
+.login{
+
+    position: relative;
+    width: 100%;
+}
+.login .nn{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.login .title {
+    width: 100%;
+    /*height: 0.3rem;*/
+    background-color: #2BAFA4;
+    position: relative;
+}
+.login .title img{
+    position: absolute;
+    top: 0.13rem;
+    left: 0.22rem;
+    width: 0.17rem;
+}
+.login .title .ke{
+    position: absolute;
+    top: 0.13rem;
+    font-size: 0.16rem;
+    right: 0.22rem;
+    color: #333;
+
+}
+ .login .logo {
+     width: 1rem ;
+     margin: 0.64rem 1.38rem;
+ }
+.login .content .phone {
+    height: 0.46rem;
+    width: 2.66rem;
+    margin: 0 auto;
+    position: relative;
+    border-bottom: 0.01rem solid #ebebeb ;
+}
+.login .content .phone  input{
+    font-size: 0.14rem;
+    height: 0.36rem;
+    outline: none;
+    line-height: 0.38rem;
+    width: 80%;
+    margin-top: 0.05rem;
+    border: none;
+ }
+.login .content .phone .tip{
+    width: 0.2rem;
+    height: 0.2rem;
+    position: absolute;
+    top:0.12rem;
+    right: 0;
+}
+.login .content .phone .tip img{
+    width: 0.17rem;
+}
+.login .content .phone .one{
+
+    display: none;
+}
+.login .content .phone .two{
+    display: none;
+}
+
+.login .content .phone  input::placeholder{
+    font-size: 0.14rem;
+    color: #999;
+}
+.login .content .forget{
+    width: 2.66rem;
+    height: 0.44rem;
+    line-height: 0.44rem;
+    position: relative;
+    margin:0 auto;
+}
+.login .content .forget span{
+    font-size: 0.12rem;
+    position: absolute;
+    top: 0rem;
+
+}
+.login .content .forget span:nth-of-type(1){
+    left: 0;
+    color: #999;
+    cursor: pointer;
+}
+.login .content .forget span:nth-of-type(2){
+    right: 0;
+    color: #f9b834;
+    cursor: pointer;
+}
+.login .content .deng{
+    cursor: pointer;
+    width: 2.66rem;
+    height: 0.4rem;
+    margin: 0.3rem auto;
+    text-align: center;
+    line-height: 0.4rem;
+    background: url("../images/login/denglutiao.png") no-repeat;
+    background-size: 2.66rem 0.4rem ;
+}
+.login .content .deng span{
+    color: #fff;
+    font-size: 0.18rem;
+}
+.login  .footer{
+    overflow: hidden;
+    width: 2.66rem;
+    margin-top: 0.71rem;
+    margin-left: 0.54rem;
+}
+.login  .footer .fa{
+    position: relative;
+}
+.login  .footer .line{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0.14rem;
+    border-bottom: 0.01rem solid #e2e2e2;
+}
+.login  .footer .fa p{
+    position: absolute;
+    top: 0;
+    margin-left: -0.37rem;
+    left: 50%;
+    color: #333;
+    background: #fff;
+    padding: 0.02rem;
+}
+.login  .footer .pic{
+   margin-top: 0.60rem;
+}
+.login  .footer .pic img{
+    width: 0.44rem;
+
+}
+.login  .footer .pic .qq{
+  margin: 0 0.6rem;
+}
+.login  #myModal{
+    height: 2rem;
+    width: 100%;
+    top: 1rem;
+    left: 0;
+
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/fonts.css">
+<style>
+   ul{
+     list-style: none;
+   }
+  body{
+    font-family: Regular;
+  }
+  .adress{
+    background:#F7F7F7 ;
+  }
+  .adress .adress-title{
+    height: 49px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    line-height: 49px;
+    background:#f9b428 ;
+    display: flex;
+    padding: 0 10px;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+  .adress .adress-title img{
+    margin-top: 12px;
+    width: 16px;
+    height: 24px;
+  }
+  .adress .adress-title h3{
+    font-size: 18px;
+    color: #333;
+    margin-top: 0px;
+    line-height: 49px;
+    font-family: Medium;
+  }
+  .adress   .section {
+    background: #fff;
+    margin-top: 49px;
+  }
+   .adress   .section ul {
+     width: 100%;
+     padding: 0;
+   }
+  .adress   .section ul li{
+    height: 49px;
+    /*padding:0 10px ;*/
+    line-height: 49px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+   .adress   .section ul li input{
+     width: 100%;
+     border: none;
+     outline: none;
+     text-indent: 10px;
+   }
+  .weui-picker-container .weui-picker-container-visible{
+    width: 100%;
+    box-sizing: border-box;
+  }
+</style>
+</head>
+<body>
+<div class="adress">
+  <div class="adress-title">
+    <a href="confirm.html"><img style="width: 20px" src="images/finished/ICON2.png"></a>
+    <h3 style="color: #ffffff;font-family: Regular">添加收货地址</h3>
+    <span style="color: #ffffff">保存</span>
+  </div>
+  <div class="clear-fix">
+
+  </div>
+  <div class="section">
+    <ul>
+      <li><input type="text" placeholder="收货人"></li>
+      <li><input type="text" placeholder="手机号码"></li>
+      <li><input type="text" id="city-picker" placeholder="请选择省市区县" readonly="" data-code="110101"
+                 data-codes="110000,110000,110101"></li>
+      <li><input type="text" placeholder="详细地址：小区，门牌号，楼栋号，"></li>
+    </ul>
+    <div class="kong"></div>
+  </div>
+</div>
+</body>
+<script src="lib/jquery.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/city-picker.min.js"></script>
+<script>
+    $("#city-picker").cityPicker({
+        title: "选择省市区/县",
+        onChange: function (picker, values, displayValues) {
+            console.log(values, displayValues);
+        }
+    });
+</script>
+</html>

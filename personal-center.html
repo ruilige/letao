@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="css/base.css" rel="stylesheet">
+  <link rel="stylesheet" href="./lib/bootstarp/css/bootstrap.css">
+  <link href="css/personal-center.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/fonts.css">
+  <style>  #BDBridgeIconWrap{display:none !important;}   </style>
+  <script>
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?84ad9d3b8f524998c95fbca7cce62fd9";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      })();
+  </script>
+
+</head>
+<body style="font-family: Regular">
+<div class="personal-center">
+  <!--头部-->
+ <div class="header">
+    <img class="setting" src="images/personal-center/shezhiICON.png">
+    <img class="head-portrait " src="images/personal-center/touxiang.png">
+   <!--<span><i>登录</i>/<i>注册</i></span>-->
+    <p>Yuuuuuuuc</p>
+ </div>
+<!--钱包-->
+  <div class="money-box">
+    <ul>
+      <li><span>0.0</span><i>钱包</i></li>
+      <li><span>0</span><i>关注</i></li>
+      <li><span>0.0</span><i>金币</i></li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="zhong-box">
+      <!--我的订单-->
+      <div class="my-goods">
+        <span>我的订单</span>
+        <div class="more-goods">
+          <a href="订单详情.html" style="text-decoration: none">
+            <span>查看更多订单</span>
+            <img src="images/personal-center/ICON5.png">
+          </a>
+        </div>
+      </div>
+      <!--图片-->
+      <div class="goods-icon-box">
+        <ul>
+          <li><img src="images/personal-center/ICON1.png">
+            <span>待付款</span>
+          </li>
+          <li><img src="images/personal-center/ICON2.png">
+            <span>待出货</span>
+          </li>
+          <li><img src="images/personal-center/ICON3.png">
+            <span>待收货</span>
+          </li>
+          <li><img src="images/personal-center/ICON4.png">
+            <span>待评价</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--最近浏览的店铺-->
+    <div class="list">
+      <ul>
+        <li><span>最近浏览的店铺</span><img src="images/personal-center/ICON5.png"></li>
+        <li><span>个性设置</span><img src="images/personal-center/ICON5.png"></li>
+        <li><span>优惠券</span><img src="images/personal-center/ICON5.png"></li>
+        <li id="service">
+          <span>客服</span></li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <div class="navTabs">
+      <a href="index.html">
+        <img src="images/home/footer11.png" alt="" class="normal" >
+        <img src="images/home/footer1.png" alt="" class="active" >
+        <p class="active txt" style=" color:#F9B52C;">首页</p>
+      </a>
+      <a href="http://www.taobao.com">
+        <img src="images/home/footer2.png" alt="" class="normal">
+        <img src="images/home/footer2.png" alt="" class="active">
+        <p>发现</p>
+      </a>
+      <a href="购物车.html">
+        <img src="images/home/footer3.png" alt="" class="normal">
+        <img src="images/home/footer33.png" alt="" class="active" >
+        <p>购物车</p>
+      </a>
+      <a href="#">
+        <img src="images/home/footer4.png" alt="" class="normal"  style="display: none">
+        <img src="images/home/footer44.png" alt="" class="active" style="display: block">
+        <p>我的</p>
+      </a>
+    </div>
+  </footer>
+</div>
+</body>
+<script src="lib/zepto.js"></script>
+<script type="text/javascript" src="js/phone.js"></script>
+<script>
+    // footer tab切换
+    // 移动端使用 touchstart 事件代替 click 事件
+    $('footer .navTabs a').on('touchstart',function () {
+        $(this).find('img').eq(0).css('display','none');
+        $(this).find('img').eq(1).css('display','block');
+        $(this).find('p').eq(0).css('color','#F9B52C');
+
+        $(this).siblings('a').find('img').css('display','none');
+        $(this).siblings('a').eq(0).find('img').eq(0).css('display','block');
+        $(this).siblings('a').eq(1).find('img').eq(0).css('display','block');
+        $(this).siblings('a').eq(2).find('img').eq(0).css('display','block');
+        $(this).siblings('a').find('p').css('color','#333333');
+    });
+   $('#service').on('touchstart',function () {
+       // location.href='https://xiaoyouxixianxian.github.io/baidushangq/'
+   })
+</script>
+
+</html>

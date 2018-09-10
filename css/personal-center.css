@@ -1,0 +1,166 @@
+body{
+    background-color:#F7F7F7 ;
+}
+/*头部*/
+.personal-center .header{
+    width: 100%;
+    height: 2.12rem;
+    background: url("../images/personal-center/sekuai.png") center center;
+
+}
+.personal-center .header .setting{
+    width: 0.24rem;
+    margin-top: 0.08rem;
+    margin-right: 0.21rem;
+    height: 0.24rem;
+    float: right;
+}
+.personal-center .header .head-portrait{
+    width: 0.835rem;
+    height: 0.835rem;
+    margin: 0.4rem 1.45rem 0 1.45rem;
+}
+.personal-center .header p{
+    font-size: 0.18rem;
+    color: #fff;
+    text-align: center;
+}
+/*钱包*/
+.personal-center .money-box{
+    overflow: hidden;
+    height: 0.795rem;
+    background: #fff;
+}
+
+.personal-center .money-box ul{
+    margin-top: 0.1rem;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.personal-center .money-box span{
+    font-size: 0.3rem;
+    /*margin-top: 0.21rem;*/
+}
+.personal-center .money-box i{
+    margin-top: 0.02rem;
+    font-style: normal;
+    display: block;
+    font-size: 0.14rem ;
+    color: #333;
+}
+/*我的订单*/
+.personal-center .zhong-box,
+.personal-center .list{
+    margin: 0.1rem;
+    background-color: #fff;
+    border-radius: 0.05rem;
+}
+.personal-center .my-goods{
+    display: flex;
+    padding: 0.1rem 0;
+    border-bottom: 0.01rem solid #f7f7f9;
+   justify-content: space-between;
+}
+.personal-center .my-goods>span{
+font-size: 0.14rem;
+color: #333;
+padding-left: 0.1rem;
+}
+.personal-center .my-goods .more-goods span{
+font-size: 0.12rem;
+color: #999;
+vertical-align: center;
+}
+.personal-center .my-goods .more-goods img{
+    width: 0.2rem;
+    /*margin-top: 0.02rem;*/
+}
+/*订单下的图片*/
+.personal-center .goods-icon-box{
+    margin-bottom: 0.1rem;
+
+}
+.personal-center .goods-icon-box ul{
+width: 100%;
+display: flex;
+margin-top: 0.07rem;
+
+justify-content: space-around;
+}
+.personal-center .goods-icon-box ul li{
+text-align: center;
+margin-bottom: 0.1rem;
+}
+.personal-center .goods-icon-box ul li img{
+width: 0.5rem;
+    margin-right: 0.1rem;
+}
+.personal-center .goods-icon-box ul li span{
+display: block;
+}
+.personal-center .list {
+/*margin-top: 0.1rem;*/
+}
+.personal-center .list li{
+    padding-left: 0.1rem;
+    border-bottom: 0.01rem solid #f7f7f7;
+    height: 0.44rem;
+    font-size: 0.14rem;
+    display: flex;
+    justify-content: space-between;
+    line-height: 0.44rem;
+}
+.personal-center .list li img {
+    margin-top: 0.12rem;
+    width: 0.2rem;
+    height: 0.2rem;
+}
+/*footer定位 露白 */
+html,body{
+    height:100%;
+    overflow:auto;
+    margin: 0;
+}
+ .personal-center footer{
+    width: 100%;
+    height: .49rem;
+    line-height: .49rem;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.personal-center footer .navTabs {
+    display: flex;
+}
+.personal-center footer .navTabs a{
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+}
+footer .navTabs a p{
+    margin-top: -.18rem;
+    font-size: .12rem;
+    color: #333333;
+}
+.personal-center footer .navTabs a img{
+    width: .25rem;
+    margin: auto;
+    margin-top: .07rem;
+    position: relative;
+    top: -.05rem;
+}
+.personal-center footer .navTabs a .active {
+    display: none;
+}
+.personal-center footer .navTabs a .normal {
+    display: block;
+}
+.personal-center footer .navTabs a .txt{
+    display: block;
+}
+.personal-center footer .navTabs a .textColor{
+    color:#F9B52C;
+}
+

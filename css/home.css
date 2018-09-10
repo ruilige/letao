@@ -1,0 +1,451 @@
+/*footer定位 露白 */
+html,body{
+    height:100%;
+    overflow:auto;
+    margin: 0;
+}
+a:hover {
+    color: #999;
+}
+.home{
+    width: 100%;
+    height: 100%;
+   font-family:Regular ;
+}
+/*灰色背景*/
+.home .product-list a{
+    text-decoration: none;
+}
+.home .bg-grey{
+    background-color: #ECECEC;
+}
+/*头部*/
+.home header{
+    width: 100%;
+    height: .44rem;
+    background: url("../images/home/tousekuai1.png") no-repeat;
+    background-size: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.home header input{
+    width: 75%;
+    height: .3rem;
+    color: #999;
+    border-radius: .2rem;
+    border: none;
+    text-indent: .3rem;
+    margin-top: .07rem;
+    margin-left: .1rem;
+    outline: none;
+}
+.home header input::placeholder{
+    color: #999;
+    text-indent: .3rem;
+}
+/*搜索图标*/
+.home header input{
+    background: url("../images/home/sousuo icon.png") no-repeat .1rem .08rem;
+    background-color: #fff;
+    background-size: .14rem;
+}
+/*扫描图片*/
+.home header .scan{
+    width: .24rem;
+    position: absolute;
+    top: .11rem;
+    right: .16rem;
+}
+/*banner图*/
+.home .banner{
+    margin-top: .44rem;
+    height: 1.17rem;
+}
+.home .banner .swiper-pagination-bullet-active {
+    background-color: #F9B62D;
+    opacity: 1
+}
+.swiper-container img{
+    width: 100%;
+}
+.clearfix{
+    clear: both;
+}
+/*产品列表*/
+.home .product-list{
+    box-shadow: 0 0 .15rem #e2e2e2;
+    margin: 0 .1rem;
+    padding: 0 0 .08rem 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: .05rem;
+    background-color: #fff;
+    position: relative;
+    top: -0.05rem;
+    left: 0;
+    z-index: 1;
+}
+.home .product-list p{
+    margin-bottom: 0;
+}
+/*列表项*/
+.home .product-list .list {
+    width: 20%;
+    text-align: center;
+    margin-top: .1rem;
+}
+.home .product-list .list img{
+    width: .44rem;
+}
+.home .product-list .list p{
+    font-size: .14rem;
+    color: #333333;
+    margin-top: .06rem;
+}
+/*时尚大咖*/
+.home .fashion{
+    position: relative;
+    margin-top: .15rem;
+    color: #ffffff;
+}
+.home .fashion .fashion-left{
+    width: 65%;
+    height: 1.33rem;
+    background: url("../images/home/guanggao1.png")no-repeat 0 0 ;
+    background-size: 100%;
+    position: relative;
+}
+/*定位字体*/
+.home .fashion span{
+    display: block;
+    position: absolute;
+}
+.home .fashion .fashion-left span:nth-of-type(1){
+    width: 1.10rem;
+    height: .285rem;
+    line-height:.285rem ;
+    font-size: .18rem;
+    text-align: center;
+    font-family: Medium;
+    left: 0;
+    top: -.1rem;
+    background: url("../images/home/tousekuai3.png") no-repeat;
+    background-size: contain;
+}
+.home .fashion .fashion-left span:nth-of-type(2){
+    font-size: .14rem;
+    width: 1.6rem;
+    left: .1rem;
+    bottom: .1rem;
+}
+.home .fashion .fashion-right{
+    width: 35%;
+}
+.home .fashion .fashion-right img
+{
+    width: 35%;
+    height: 1.33rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.home .fashion .fashion-right span{
+    width: .79rem;
+    height: .24rem;
+    line-height:.2rem ;
+    text-align: center;
+    right: .22rem;
+    bottom: .2rem;
+    font-size: .14rem;
+    background: url("../images/home/tousekuai4.png")no-repeat;
+    background-size: contain;
+}
+/*限时抢购*/
+.home .sale h2{
+    font-family: Medium;
+}
+.home .sale{
+    padding: 0;
+    margin-top: .08rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.home .sale li{
+    width: 25%;
+    border: .01rem solid transparent;
+    text-align: center;
+    padding: .08rem .01rem;
+    box-sizing: border-box;
+}
+.home .sale li a{
+    text-decoration: none;
+}
+/*倒计时*/
+.home .sale li span{
+    display: inline-block;
+    text-align: center;
+    color: #F81F1F;
+}
+/*限时换购字体*/
+.home .sale li h2{
+    color: #F81F1F;
+    font-size: .18rem;
+    margin: 0;
+}
+/*倒计时背景色*/
+.home .sale li .bg{
+     width: .17rem;
+     line-height: .15rem;
+     text-align: center;
+     color: #ffffff;
+     font-size: .12rem;
+     background: url("../images/home/daojishi sekuai.png") no-repeat;
+     background-size: .17rem .15rem;
+  }
+/*商品图片*/
+.home .sale li img{
+    width: 50%;
+}
+/*li的第奇数个*/
+.home .sale li:nth-of-type(even) img{
+    width: 80%;
+}
+/*li的第偶数个 图片和字体距离*/
+.home .sale li:nth-of-type(odd) img{
+    width: 40%;
+    margin-top: .07rem;
+}
+.home .sale li:nth-of-type(2) img{
+    width: 88%;
+}
+.home .sale li:nth-of-type(3) img{
+    width: 50%;
+}
+.home .sale li:nth-of-type(4) img{
+    width:55%;
+}
+.home .sale li:nth-of-type(6) img{
+    width:100%;
+}
+/*买遍全球*/
+.home .world .shoe{
+background: url("../images/home/guanggao11.png")no-repeat;
+background-size: 100%;
+}
+.home .world .shoe span:nth-of-type(1){
+    background: url("../images/home/tousekuai5.png")no-repeat;
+    background-size: 100%;
+    font-family: Medium;
+}
+.home .world .shoe span:nth-of-type(2){
+    bottom: .3rem;
+}
+/*潮男俱乐部*/
+.home .world .club span{
+    width: 1rem;
+    line-height: .24rem;
+     background: url("../images/home/tousekuai6.png")no-repeat;
+     background-size:100%;
+    /*left: .18rem;*/
+    /*bottom: .2rem;*/
+ }
+/*气质名媛*/
+.home .bg-grey .lady{
+    margin-top: 0;
+}
+.home .lady li{
+    padding-top: .1rem;
+    box-sizing: border-box;
+    width: 33.3%;
+    border: none;
+}
+.home .lady li a{
+    text-decoration: none;
+}
+/*字体*/
+.home .lady li h2{
+    color: #333333;
+}
+.home .lady li span{
+    color: #999999;
+}
+/*图片*/
+.home .lady li:nth-of-type(odd){
+    background-color: #FAFAFA;
+}
+.home .lady li:nth-of-type(even){
+    background-color: #ffffff;
+}
+.home .lady li:nth-of-type(1) img{
+    width: 30%;
+}
+.home .lady li:nth-of-type(2) img{
+    width: 50%;
+    margin-top: .1rem;
+}
+.home .lady li:nth-of-type(3) img{
+    width: 20%;
+}
+.home .lady li:nth-of-type(4) img{
+    width: 23%;
+    margin-top: .1rem;
+}
+.home .lady li:nth-of-type(5) img{
+    width: 40%;
+}
+.home .lady li:nth-of-type(6) img{
+    width: 25%;
+    margin-top: .1rem;
+}
+/*猜你喜欢*/
+.home .like{
+    position: relative;
+    margin-top: .2rem;
+}
+.home .like .line{
+    width: 60%;
+    height: .01rem;
+    background-color:#F9B52B;
+}
+.home .like h2{
+    color:#F9B52B ;
+    font-size: .18rem;
+    position: absolute;
+    left: 25%;
+    top: -.28rem;
+    margin-left: .55rem;
+    padding: 0 .05rem;
+    background-color: #ECECEC;
+}
+/*heart*/
+.home .like h2::before{
+    content: '';
+    display: inline-block;
+    background: url("../images/home/cainixihuan.png")no-repeat;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    left: -.20rem;
+    top: 0;
+}
+/*产品列表*/
+.home .like .item{
+    margin: .2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 .1rem;
+    padding-bottom: .35rem;
+}
+.home .like .item li:nth-of-type(even){
+    margin-left: .05rem;
+    margin-bottom: .05rem;
+}
+.home .like .item li{
+    width: 49%;
+    height: 2.25rem;
+    position: relative;
+}
+.home .like .item li a{
+    text-decoration: none;
+}
+/*商品文字*/
+.home .like .item li .des h3{
+   font-size: .14rem;
+    color: #333333;
+}
+/*商品价格*/
+.home .like .item li .des span{
+    font-size: .16rem;
+    color: #DA1B46;
+}
+/*付款人数*/
+.home .like .item li .des .num{
+    color: #999999;
+    font-size: .1rem;
+}
+/*更多图标*/
+.home .like .item li:nth-of-type(1){
+    background: url("../images/home/shangpin1.png") no-repeat;
+    background-size: 100%;
+}
+.home .like .item li:nth-of-type(2){
+    background: url("../images/home/shangpin2.png") no-repeat;
+    background-size: 100%;
+}
+.home .like .item li:nth-of-type(3){
+    background: url("../images/home/shangpin3.png") no-repeat;
+    background-size: 100%;
+}
+.home .like .item li:nth-of-type(4){
+    background: url("../images/home/shangpin4.png") no-repeat;
+    background-size: 100%;
+}
+.home .like .item li:nth-of-type(5){
+    background: url("../images/home/shangpin5.png") no-repeat;
+    background-size: 100%;
+}
+.home .like .item li:nth-of-type(6){
+    background: url("../images/home/shangpin6.png") no-repeat;
+    background-size: 100%;
+}
+/*文字定位*/
+.home .like .item li .des{
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    bottom: .1rem;
+    left: .05rem;
+}
+/*更多小图标*/
+.home .like .item li .des img{
+    width: .23rem;
+    height: .03rem;
+    position: absolute;
+    right: .15rem;
+    top: .55rem;
+}
+/*底部tab*/
+.home footer{
+    width: 100%;
+    height: .49rem;
+    line-height: .49rem;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.home footer .navTabs {
+    display: flex;
+}
+.home footer .navTabs a{
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+}
+.home footer .navTabs a p{
+    margin-top: -.18rem;
+    font-size: .12rem;
+    color: #333333;
+}
+.home footer .navTabs a img{
+    width: .25rem;
+    margin: auto;
+    margin-top: .07rem;
+    position: relative;
+    top: -.05rem;
+}
+.home footer .navTabs a .active {
+    display: none;
+}
+.home footer .navTabs a .normal {
+    display: block;
+}
+.home footer .navTabs a .txt{
+    display: block;
+}
+.home footer .navTabs a .textColor{
+    color:#F9B52C;
+}

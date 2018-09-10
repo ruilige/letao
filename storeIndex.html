@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/storeIndex.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <title>Title</title>
+</head>
+<body style="font-family: Regular">
+<header>
+    <div class="name">
+       <h2 style="font-weight: 100">EMPORIO ARMANI...</h2>
+        <img class="more" src="images/storeIndex/icon1.png" alt="">
+        <span class="btn1">关注</span>
+        <span class="btn2">
+            <img src="images/storeIndex/icon2.png" alt="">
+            <img src="images/storeIndex/icon3.png" alt="">
+        </span>
+    </div>
+    <ul class="search" style="font-size: .14rem">
+        <li><input type="text" placeholder="搜索"></li>
+        <li style="border-bottom: .015rem solid #ffffff;font-family: Medium" >首页</li>
+        <li style="font-family: Medium">商品</li>
+        <li style="font-family: Medium">活动</li>
+        <li style="font-family: Medium">视频</li>
+    </ul>
+</header>
+<div class="pic">
+    <img src="images/storeIndex/datu1.png" alt="">
+    <img src="images/storeIndex/datu2.png" alt="">
+</div>
+<!--产品介绍-->
+ <div class="product">
+     <h2 style="font-size: .14rem;font-family: Medium">新品上架</h2>
+     <ul class="item">
+         <li>
+             <img src="images/storeIndex/shangpin1.png" alt="">
+             <p class="des">EMPORIO ARMANI/阿玛尼皮带男2018新款</p>
+             <p class="price" style="font-family: Medium">￥2100.00</p>
+         </li>
+         <li>
+             <img src="images/storeIndex/shangpin2.png" alt="">
+             <p class="des">EMPORIO ARMANI/阿玛尼皮带男2018新款</p>
+             <p class="price" style="font-family: Medium">￥2100.00</p>
+         </li>
+         <li>
+             <img src="images/storeIndex/shangpin3.png" alt="">
+             <p class="des">EMPORIO ARMANI/阿玛尼皮带男2018新款</p>
+             <p class="price" style="font-family: Medium">￥2100.00</p>
+         </li>
+         <li>
+             <img src="images/storeIndex/shangpin4.png" alt="">
+             <p class="des">EMPORIO ARMANI/阿玛尼皮带男2018新款</p>
+             <p class="price" style="font-family: Medium">￥2100.00</p>
+         </li>
+         <li>
+             <img src="images/storeIndex/shangpin5.png" alt="">
+             <p class="des">EMPORIO ARMANI/阿玛尼皮带男2018新款</p>
+             <p class="price" style="font-family: Medium">￥2100.00</p>
+         </li>
+         <li>
+             <img src="images/storeIndex/shangpin6.png" alt="">
+             <p class="des">EMPORIO ARMANI/阿玛尼皮带男2018新款</p>
+             <p class="price" style="font-family: Medium">￥2100.00</p>
+         </li>
+         <li>
+             <img src="images/storeIndex/shangpin7.png" alt="">
+             <p class="des">EMPORIO ARMANI/阿玛尼皮带男2018新款</p>
+             <p class="price" style="font-family: Medium">￥2100.00</p>
+         </li>
+         <li>
+             <img src="images/storeIndex/shangpin8.png" alt="">
+             <p class="des">EMPORIO ARMANI/阿玛尼皮带男2018新款</p>
+             <p class="price" style="font-family: Medium">￥2100.00</p>
+         </li>
+     </ul>
+ </div>
+</body>
+<script src="lib/zepto.js"></script>
+<script src="js/phone.js"></script>
+<script>
+    $('.search li').on('touchstart',function (){
+        $('.search li').eq(0).css('border-bottom','transparent').eq(1).css('border-bottom','#ffffff');
+        $(this).css('border-bottom','.015rem solid #ffffff').siblings().css('border-bottom','none')
+        $('.search li').eq(0).css('border-bottom','transparent')
+    })
+    // 跳转店铺列表页面
+    $('.search li').eq(2).on('touchstart',function (e) {
+        e.preventDefault();
+        location.href='./店铺列表.html'
+    });
+</script>
+</html>

@@ -1,0 +1,114 @@
+
+html {
+    font-size: 100px !important;
+}
+.register-box {
+    position: relative;
+}
+.register-box .img {
+    position: absolute;
+    top: .13rem;
+    left: .22rem;
+    cursor: pointer;
+}
+.register-box .img img {
+    width: .17rem;
+    height: .17rem;
+}
+.register-box .kef {
+    position: absolute;
+    top: .13rem;
+    right: .22rem;
+    color: #333;
+    cursor: pointer;
+    font-size: .16rem;
+}
+.register-box .logo,.section {
+    display: flex;
+    justify-content: center;
+}
+.register-box .logo img{
+    width: 1rem;
+    height: 1rem;
+    margin: .64rem 0 .64rem 0;
+}
+.register-box .input-box {
+    width: 100%;
+}
+.register-box .input-box .input-bottom .code {
+    width: 48%;
+    height: .3rem;
+    color: #f9b428;
+    font-size: .14rem;
+    text-align: center;
+    line-height: .28rem;
+    outline: none;
+    background-color: #fff;
+    /*border: 1px solid #f9b428;*/
+    border-radius: .3rem;
+    display: inline-block;
+}
+.register-box .input-box .input-bottom {
+    width: 2.26rem;
+    height: .46rem;
+    margin: auto;
+    border-bottom: 1px solid #ebebeb;
+}
+.register-box .input-box .input-bottom input {
+    border: none;
+    outline: none;
+    width: 85%;
+    height: .44rem;
+    line-height: .4rem;
+}
+.register-box .input-box .input-bottom input#sv-txt {
+    width: 50%;
+}
+.register-box .input-box .input-bottom input::placeholder {
+    font-size: .14rem;
+    color: #999;
+}
+.register-box .input-box .input-bottom img {
+    width: .13rem;
+    height: .13rem;
+    float: right;
+    margin-top: .14rem;
+}
+.register-box .input-box .input-bottom img.no {
+    font-size: .05rem;
+    display: none;
+}
+.register-box .input-box .input-bottom img.ok {
+    top: .13rem;
+    display: none;
+}
+.register-box .section {
+    position: relative;
+}
+.register-box .section .img-des {
+    width: 2.26rem;
+    height: .4rem;
+    position: absolute;
+    top: 2.23rem;
+    left: 50%;
+    cursor: pointer;
+    margin-left: -1.16rem;
+}
+.register-box .section .img-des img {
+    width: 2.26rem;
+    height: .4rem;
+    position: absolute;
+}
+.register-box .section .img-des #dl {
+    color: #fff;
+    font-size: .18rem;
+    position: absolute;
+    top: .075rem;
+    left: 50%;
+    margin-left: -.36rem;
+}
+footer .foot{width: 100%;display: flex;justify-content: center;}
+footer .foot .mt { display: flex; margin-top: 1.27rem;}
+footer .foot .mt a {font-size: .14rem; text-decoration: none;}
+footer .foot .mt a:nth-of-type(1){color: #999;}
+footer .foot .mt a:nth-of-type(2){color: #f9b834;}

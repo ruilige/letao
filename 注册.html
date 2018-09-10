@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="./lib/bootstarp/css/bootstrap.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+<body style="font-family: Regular">
+<div class="register-box"><!--注册盒子-->
+    <div class="img"><img src="images/login/tuichu.png" alt=""></div><!--头部左图-->
+    <div class="kef">客服</div><!--客服-->
+    <div class="logo"><img src="images/login/LOGO.png" alt=""></div><!--头部右图-->
+    <div class="section"><!--内容部分-->
+        <div class="input-box"><!--所有输入框包裹盒子-->
+            <div class="input-bottom"><!--手机号输入框盒子-->
+                <input type="text" id="regPhone" placeholder="请输入您的手机号">
+                <img class="ok" id="cpn-ok" src="images/login/图层12@2x.png" alt="">
+                <img class="no" id="cpn-no" src="images/login/图层11@2x.png" alt="">
+            </div>
+            <div class="input-bottom"><!--验证码输入框盒子-->
+                <input type="text" id="sv-txt" placeholder="请输入验证码">
+                <button type="button" class="code" onclick="run()">验证码</button>
+            </div>
+            <div class="input-bottom"><!--密码输入框盒子-->
+                <input type="password" id="regPsw" placeholder="请输入密码">
+                <img class="ok" id="psw-ok" src="images/login/图层12@2x.png" alt="">
+                <img class="no" id="psw-no" src="images/login/图层11@2x.png" alt="">
+            </div>
+            <div class="input-bottom"><!--再次输入密码框盒子-->
+                <input type="password" id="regsPsw" placeholder="请再次输入密码">
+                <img class="ok" id="vspsw-ok" src="images/login/图层12@2x.png" alt="">
+                <img class="no" id="vspsw-no" src="images/login/图层11@2x.png" alt="">
+            </div>
+        </div>
+        <div class="img-des"><!--注册按钮盒子-->
+            <img src="images/login/denglutiao.png">
+            <div id="dl">立即注册</div>
+        </div>
+    </div><!--内容结束-->
+</div>
+<footer><!--脚步开始-->
+    <div class="foot">
+        <div class="mt">
+            <a href="#">已有账户？</a>
+            <a href="#">立即登录</a>
+        </div>
+    </div>
+</footer><!--脚步结束-->
+</body>
+<script src="lib/zepto.js"></script>
+<script src="js/phone.js"></script>
+<script src="js/reg.js"></script>
+</html>
